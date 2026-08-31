@@ -1,10 +1,10 @@
 ---
-title: "Proposal Title"
+title: "Easily construct, covert or build Likert items from vectors or data.frame"
 author:
-  - name: Annie Easley
-    orcid: 5555-5555-5555-5555
+  - name: Job Nmadu
+    orcid: 0000-0002-1320-8957
     affiliations:
-      - "Lewis Research Center, National Aeronautics and Space Administration"
+      - "Federal University of Technology, Minna, Nigeria"
 
 date: today
 date-format: iso

@@ -58,3 +58,11 @@ to the project and the project period. The ISC reserves the right to vet
 how funds are used for each project separately. If in doubt, please reach
 out to us.
 -->
+
+Milestone     | Expected Completion period | Deliverables / Tangible Work Products
+------------- | -------------  | -------------------------------------------- 
+Inception and take-off  | Two months     | Complete architecture design and initial abstract class definitions in the GitHub repository. 
+Coding and testing  | Four months    | Release the optimized core chunking engine; pass integration tests with local memory backends. Conduct a sensitization workshop for faculty and students.
+Preliminary   | Two months     | Initial submission of version 1.0.0 to CRAN, complete release comprehensive pkgdown documentation website, and host a community webinar.
+Final release  and closure | One month | Final CRAN submission and project closure
+
