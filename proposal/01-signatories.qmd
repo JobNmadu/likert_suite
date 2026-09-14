@@ -18,11 +18,15 @@ to the project. Include public artifacts such as code repositories to
 show their tack record.
 -->
 
+Professor Job Nmadu is leading the task and would deliver on the targets.
+
 ## Contributors
 <!--
 Who are the people who have actively helped with this proposal but
 won't necessarily be on the core project team later?
 -->
+
+Dr. Halima Sallawu of Federal University of Technology, Minna, Nigeria is in my lab and has participated actively in several data collection activities by which the need for this project is borne.
 
 ## Consulted
 <!--

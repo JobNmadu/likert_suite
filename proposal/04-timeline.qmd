@@ -22,6 +22,8 @@ Including target dates is really important as you need to be committed
 and the ISC need to have a means of tracking delivery
 -->
 
+Functions and codes in GitHub and CRAN repositories as well as continuous development and integration on feedback, stakeholder concerns and updates occasioned by change of roles by R Core teams.
+
 ## Other aspects
 
 <!--
@@ -37,6 +39,10 @@ to be shared quarterly on the R Consortium blog.
  - [ ] UseR!
  - [ ] ISC meetings
 -->
+
+Announcement posts and delivery blogs shall be used for continuous feedback while social media posts will be used for stakeholder engagement.
+
+UseR! conferences and ISC calls are also channels for publicity.
 
 ## Budget & funding plan
 
@@ -63,6 +69,15 @@ Milestone     | Expected Completion period | Deliverables / Tangible Work Produc
 ------------- | -------------  | -------------------------------------------- 
 Inception and take-off  | Two months     | Complete architecture design and initial abstract class definitions in the GitHub repository. 
 Coding and testing  | Four months    | Release the optimized core chunking engine; pass integration tests with local memory backends. Conduct a sensitization workshop for faculty and students.
-Preliminary   | Two months     | Initial submission of version 1.0.0 to CRAN, complete release comprehensive pkgdown documentation website, and host a community webinar.
+Preliminary release and initial CRAN submission  | Two months     | Comprehensive pkgdown documentation, website hosting, initial submission of version 1.0.0 to CRAN, and host a community webinar.
 Final release  and closure | One month | Final CRAN submission and project closure
 
+In line with the above timelines, the budget propsed for this project is USD8500 appropriated as follows:
+
+Inception and take-off (USD1500): Funds 30 hours of core development work at a rate of USD50/hour. This covers GitHub setup and integration with local machine codes and designing the user-facing API wrappers
+
+Coding and testing (USD5000): Funds 100 hours of setting up functions and algorithms, testing them for consistency and reproducibility and integrating with GitHub repositories. Setting up documentation and website. Initial submission to CRAN.
+
+Sensitization workshop(USD1000): Sensitization workshop and stakeholder engagement for faculty and students at Federal University of Technology, Minna. Publicity over social media handles.
+
+Final release  and closure (USD1000): Funds 20 hours for incorporating views from stakeholders into the the package, responding to CRAN reviews and comments, cleaning up the package and final release to CRAN.
