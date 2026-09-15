@@ -1,5 +1,5 @@
 ---
-title: "Easily construct, covert or build Likert items from vectors or data.frame"
+title: "Easily construct, covert or build Likert items from vectors or data frames"
 author:
   - name: Job Nmadu
     orcid: 0000-0002-1320-8957

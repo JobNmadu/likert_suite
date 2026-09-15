@@ -65,18 +65,18 @@ how funds are used for each project separately. If in doubt, please reach
 out to us.
 -->
 
-Milestone     | Expected Completion period | Deliverables / Tangible Work Products
+Milestone     | Period (months) | Deliverable/Tangible Products
 ------------- | -------------  | -------------------------------------------- 
-Inception and take-off  | Two months     | Complete architecture design and initial abstract class definitions in the GitHub repository. 
-Coding and testing  | Four months    | Release the optimized core chunking engine; pass integration tests with local memory backends. Conduct a sensitization workshop for faculty and students.
-Preliminary release and initial CRAN submission  | Two months     | Comprehensive pkgdown documentation, website hosting, initial submission of version 1.0.0 to CRAN, and host a community webinar.
-Final release  and closure | One month | Final CRAN submission and project closure
+Inception and take-off  | 2     | Complete architecture design and initial abstract class definitions in the GitHub repository. 
+Coding and testing  | 4    | Release the optimized core chunking engine; pass integration tests with local memory backends. Conduct a sensitization workshop for faculty and students.
+Preliminary release and initial CRAN submission  | 2     | Comprehensive pkgdown documentation, website hosting, initial CRAN submission, and host a community webinar.
+Final release  and closure | 1 | Final CRAN submission and project closure
 
 In line with the above timelines, the budget propsed for this project is USD8500 appropriated as follows:
 
-Inception and take-off (USD1500): Funds 30 hours of core development work at a rate of USD50/hour. This covers GitHub setup and integration with local machine codes and designing the user-facing API wrappers
+Inception and take-off (USD1500): Funds 30 hours of core development work at a rate of USD50/hour covering GitHub setup and integration with local machine codes.
 
-Coding and testing (USD5000): Funds 100 hours of setting up functions and algorithms, testing them for consistency and reproducibility and integrating with GitHub repositories. Setting up documentation and website. Initial submission to CRAN.
+Coding and testing (USD5000): Funds 100 hours of setting up functions and algorithms, and documentation (website and GitHub repositories). Initial submission to CRAN.
 
 Sensitization workshop(USD1000): Sensitization workshop and stakeholder engagement for faculty and students at Federal University of Technology, Minna. Publicity over social media handles.
 

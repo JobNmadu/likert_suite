@@ -10,13 +10,9 @@ This is where the proposal should be outlined.
 This project aims to provide algorithms around the following concepts:
 
 - binary construction
-
 - likert construction
-
 - likert conversion
-
 - vector description
-
 - weight construction
 
 ## Overview
@@ -44,21 +40,21 @@ Depending on project type the detail section should include:
 <!--
 What is the smallest thing you can build that delivers value to your users?
 -->
-The minimum goals is to have a lightweight R package hosted on GitHub that successfully executes bi-directional transliteration between raw character vectors and structured ordinal Likert scales, focusing on likert construction and likert conversion modules.
+The minimum goals is to have a lightweight R package hosted on GitHub that successfully for transliteration between raw character vectors and structured ordinal Likert scales, focusing on likert construction and likert conversion modules.
 
 ### Architecture
 
 <!--
 What does the high-level architecture look like?
 -->
-The package will be built within the R statistical computing ecosystem with minimal external dependencies. It will feature an optimized core chunking engine designed to pass integration tests with local memory backends. The internal logic will revolve around transliteration and dynamic conversion algorithms around the main concepts and function of this project.
+The package will be built within the R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms around the main concepts and function of this project.
 
 ### Assumptions
 
 <!--
 What assumptions are you making that, if proven false, would invalidate the project?
 -->
-There is high expectation that the project would be delivered with no particular risk associated with all timelines, except emergencies or natural disasters, like COVID-19 happens.
+There is high expectation that the project would be delivered with no particular risk associated with all timelines, except if emergencies or natural disasters, like COVID-19 happens.
 
 ### External dependencies
 
