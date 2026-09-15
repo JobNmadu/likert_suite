@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Job Nmadu">
-<meta name="dcterms.date" content="2026-09-14">
+<meta name="dcterms.date" content="2026-09-15">
 
-<title>Easily construct, covert or build Likert items from vectors or data.frame</title>
+<title>Easily construct, covert or build Likert items from vectors or data frames</title>
 <style>
 
 span.smallcaps{font-variant: small-caps;}
@@ -2197,7 +2197,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Easily construct, covert or build Likert items from vectors or data.frame</h1>
+<h1 class="title">Easily construct, covert or build Likert items from vectors or data frames</h1>
 </div>
 
 
@@ -2221,7 +2221,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2026-09-14</p>
+      <p class="date">2026-09-15</p>
     </div>
   </div>
   
@@ -2296,8 +2296,8 @@ It is important to cover:
  - [ ] Brief summary of existing work and previous attempts (e.g., relevant R packages)
  - [ ] If proposing changes to R itself: letter of support from R Core member
 -->
-<p>The CRAN packages for Likert-type data analysis workflow within the R statistical computing ecosystem, viz, <span class="citation" data-cites="mollazehi2025">Mollazehi (<a href="#ref-mollazehi2025" role="doc-biblioref">2025</a>)</span>; <span class="citation" data-cites="winzar2026">Winzar (<a href="#ref-winzar2026" role="doc-biblioref">2026</a>)</span> and <span class="citation" data-cites="bryer2025">Bryer and Speerschneider (<a href="#ref-bryer2025" role="doc-biblioref">2025</a>)</span>, have not contemplated a situation whereby the items may be transliterated to other formats for more robust analysis and interpretation. They effectively facilitate standard Likert scale workflows, but operate under the assumption that input data is structured in the conventional, clean ordinal format. Consequently, the existing software landscape lacks the architectural framework required to handle data format transliteration.</p>
-<p>In empirical research, investigators frequently encounter non-standard data structures that require transformation to achieve robust analysis and deep interpretation. For instance, researchers often face the need to convert Likert text responses into ordinal Likert scales and vice versa, or synthesize valid Likert-type scales from non-Likert source data. Because current R tools cannot execute these complex transformations natively, research teams are forced to rely on disjointed, manual workarounds and ad-hoc scripting. This fragmentation severely disrupts reproducible data workflows, introduces significant risks of data entry and manipulation errors, and results in substantial losses in operational man-hours. This proposed project addresses this computational gap by proposing a novel, open-source R package framework. By proposing a bi-directional transliteration and dynamic format conversion facilities, the software will eliminate manual data manipulation, preserve data integrity, and significantly optimize workflow efficiency for researchers handling complex, non-standard behavioral and social science data.</p>
+<p>The CRAN packages for Likert-type data workflow, viz, <span class="citation" data-cites="mollazehi2025">Mollazehi (<a href="#ref-mollazehi2025" role="doc-biblioref">2025</a>)</span>; <span class="citation" data-cites="winzar2026">Winzar (<a href="#ref-winzar2026" role="doc-biblioref">2026</a>)</span> and <span class="citation" data-cites="bryer2025">Bryer and Speerschneider (<a href="#ref-bryer2025" role="doc-biblioref">2025</a>)</span>, have not contemplated a situation whereby transliterated to other formats may be required for more robust interpretation. They effectively facilitate standard Likert scale workflows, but operate under the assumption that data is conventional, clean ordinal format lacking the architectural framework required to handle format transliteration.</p>
+<p>Empirical workflow may encounter non-standard data requiring transformation for deep interpretation. For instance, researchers may need to convert Likert-type responses into ordinal scales and vice versa, or synthesize valid Likert-type scales from non-Likert data. Existing workflow cannot execute these transformations natively, therefore, work rely on disjointed, manual workarounds and ad-hoc scripting. This fragmentation disrupts workflows, introduces data entry risks and errors, resulting in man-hours loss. This project proposes an open-source R package for transliteration and dynamic format conversion to fill the gap and eliminate manual data workflows, preserve data integrity, and optimize workflow for handling non-standard Likert-type workflows.</p>
 </section>
 <section id="the-proposal" class="level1">
 <h1>The proposal</h1>
@@ -2310,11 +2310,11 @@ This is where the proposal should be outlined.
 -->
 <p>This project aims to provide algorithms around the following concepts:</p>
 <ul>
-<li><p>binary construction</p></li>
-<li><p>likert construction</p></li>
-<li><p>likert conversion</p></li>
-<li><p>vector description</p></li>
-<li><p>weight construction</p></li>
+<li>binary construction</li>
+<li>likert construction</li>
+<li>likert conversion</li>
+<li>vector description</li>
+<li>weight construction</li>
 </ul>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
@@ -2341,21 +2341,21 @@ Depending on project type the detail section should include:
 <!--
 What is the smallest thing you can build that delivers value to your users?
 -->
-<p>The minimum goals is to have a lightweight R package hosted on GitHub that successfully executes bi-directional transliteration between raw character vectors and structured ordinal Likert scales, focusing on likert construction and likert conversion modules.</p>
+<p>The minimum goals is to have a lightweight R package hosted on GitHub that successfully for transliteration between raw character vectors and structured ordinal Likert scales, focusing on likert construction and likert conversion modules.</p>
 </section>
 <section id="architecture" class="level3">
 <h3 class="anchored" data-anchor-id="architecture">Architecture</h3>
 <!--
 What does the high-level architecture look like?
 -->
-<p>The package will be built within the R statistical computing ecosystem with minimal external dependencies. It will feature an optimized core chunking engine designed to pass integration tests with local memory backends. The internal logic will revolve around transliteration and dynamic conversion algorithms around the main concepts and function of this project.</p>
+<p>The package will be built within the R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms around the main concepts and function of this project.</p>
 </section>
 <section id="assumptions" class="level3">
 <h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
 <!--
 What assumptions are you making that, if proven false, would invalidate the project?
 -->
-<p>There is high expectation that the project would be delivered with no particular risk associated with all timelines, except emergencies or natural disasters, like COVID-19 happens.</p>
+<p>There is high expectation that the project would be delivered with no particular risk associated with all timelines, except if emergencies or natural disasters, like COVID-19 happens.</p>
 </section>
 <section id="external-dependencies" class="level3">
 <h3 class="anchored" data-anchor-id="external-dependencies">External dependencies</h3>
@@ -2439,36 +2439,36 @@ out to us.
 <thead>
 <tr class="header">
 <th>Milestone</th>
-<th>Expected Completion period</th>
-<th>Deliverables / Tangible Work Products</th>
+<th>Period (months)</th>
+<th>Deliverable/Tangible Products</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Inception and take-off</td>
-<td>Two months</td>
+<td>2</td>
 <td>Complete architecture design and initial abstract class definitions in the GitHub repository.</td>
 </tr>
 <tr class="even">
 <td>Coding and testing</td>
-<td>Four months</td>
+<td>4</td>
 <td>Release the optimized core chunking engine; pass integration tests with local memory backends. Conduct a sensitization workshop for faculty and students.</td>
 </tr>
 <tr class="odd">
 <td>Preliminary release and initial CRAN submission</td>
-<td>Two months</td>
-<td>Comprehensive pkgdown documentation, website hosting, initial submission of version 1.0.0 to CRAN, and host a community webinar.</td>
+<td>2</td>
+<td>Comprehensive pkgdown documentation, website hosting, initial CRAN submission, and host a community webinar.</td>
 </tr>
 <tr class="even">
 <td>Final release and closure</td>
-<td>One month</td>
+<td>1</td>
 <td>Final CRAN submission and project closure</td>
 </tr>
 </tbody>
 </table>
 <p>In line with the above timelines, the budget propsed for this project is USD8500 appropriated as follows:</p>
-<p>Inception and take-off (USD1500): Funds 30 hours of core development work at a rate of USD50/hour. This covers GitHub setup and integration with local machine codes and designing the user-facing API wrappers</p>
-<p>Coding and testing (USD5000): Funds 100 hours of setting up functions and algorithms, testing them for consistency and reproducibility and integrating with GitHub repositories. Setting up documentation and website. Initial submission to CRAN.</p>
+<p>Inception and take-off (USD1500): Funds 30 hours of core development work at a rate of USD50/hour covering GitHub setup and integration with local machine codes.</p>
+<p>Coding and testing (USD5000): Funds 100 hours of setting up functions and algorithms, and documentation (website and GitHub repositories). Initial submission to CRAN.</p>
 <p>Sensitization workshop(USD1000): Sensitization workshop and stakeholder engagement for faculty and students at Federal University of Technology, Minna. Publicity over social media handles.</p>
 <p>Final release and closure (USD1000): Funds 20 hours for incorporating views from stakeholders into the the package, responding to CRAN reviews and comments, cleaning up the package and final release to CRAN.</p>
 </section>
