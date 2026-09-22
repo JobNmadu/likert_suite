@@ -12,7 +12,7 @@ important because projects need to get up and running quickly.
  - [ ] Reporting framework
 -->
 
-The start-up of the open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with local machine workflows. The overall system architecture design and defining the initial abstract classes that will govern the package's functionality would be the priority.
+The open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with the local machine workflows. The system's architectural design and defining of the initial abstract classes will be the first priority.
 
 
 ## Technical delivery
@@ -24,7 +24,7 @@ Including target dates is really important as you need to be committed
 and the ISC need to have a means of tracking delivery
 -->
 
-Functions and codes in GitHub and CRAN repositories as well as continuous development and integration on feedback, stakeholder concerns and updates occasioned by change of rules by R Core teams.
+Procedure for continuous integration, stakeholder feedback and updates by R Core teams are in place after package deployment to GitHub and CRAN repositories.
 
 ## Other aspects
 
@@ -42,7 +42,7 @@ to be shared quarterly on the R Consortium blog.
  - [ ] ISC meetings
 -->
 
-Announcement posts and delivery blogs shall be used for continuous feedback while social media posts will be used for stakeholder engagement.
+Announcement posts and delivery blogs for continuous feedback while social media posts will be used for stakeholder engagement.
 
 ## Budget & funding plan
 
@@ -63,14 +63,6 @@ or personal hardware. Cloud services may be covered if they are specific
 to the project and the project period. The ISC reserves the right to vet
 how funds are used for each project separately. If in doubt, please reach
 out to us.
--->
-
-Milestone     | Period (months) | Deliverable/Tangible Products
-------------- | -------------  | -------------------------------------------- 
-Inception and take-off  | 2     | Complete architecture design and initial abstract class definitions in the GitHub repository. 
-Coding and testing  | 4    | Release the optimized core chunking engine; pass integration tests with local memory backends. Conduct a sensitization workshop for faculty and students.
-Preliminary release and initial CRAN submission  | 2     | Comprehensive pkgdown documentation, website hosting, initial CRAN submission, and host a community webinar.
-Final release  and closure | 1 | Final CRAN submission and project closure
 
 In line with the above timelines, the budget propsed for this project is USD8500 appropriated as follows:
 
@@ -80,4 +72,17 @@ Coding and testing (USD5000): Funds 100 hours of setting up functions and algori
 
 Sensitization workshop(USD1000): Sensitization workshop and stakeholder engagement for faculty and students at Federal University of Technology, Minna. Publicity over social media handles.
 
-Final release  and closure (USD1000): Funds 20 hours for incorporating views from stakeholders into the the package, responding to CRAN reviews and comments, cleaning up the package and final release to CRAN.
+Final release  and closure (USD1000): Funds 20 hours for incorporating views from stakeholders into the package, responding to CRAN reviews and comments, cleaning up the package and final release to CRAN.
+
+Preliminary release and initial CRAN submission  | 2     | Comprehensive package documentation, website hosting, initial CRAN submission, and host a community webinar  | 1000
+
+-->
+
+Milestone     | Duration (weeks)[1] | Deliverable/Tangible Products | Budget (USD)
+------------- | -------------  | ---------------------------------- | --------- 
+Inception and take-off  | 3     | Establish GitHub repository and local machine integration. Complete core system architecture design and initial abstract class definitions | 1500
+Coding and testing  | 10    | Set up functions and transformation algorithms. Build the documentation website and GitHub pages. Pass integration tests with local memory backends and prepare the initial CRAN submission package | 5000
+Sensitization Workshop  | concurrently with _Testing and Coding_    | Conduct a sensitization workshop and stakeholder engagement for faculty and students at the Federal University of Technology, Minna. Drive publicity over social media handles | 1000
+Final release  and closure | 2 | Incorporate stakeholder engagement feedback, resolve CRAN review comments, clean up repository branches, and achieve official final release on CRAN | 1000
+Total | 15 |  | 8500
+[1] 10 hours are devoted per week

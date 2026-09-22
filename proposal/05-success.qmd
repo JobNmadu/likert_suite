@@ -7,11 +7,10 @@ thorough understanding going in of what the risks are to delivery
 -->
 
 ## Definition of done
-
-
 <!--
 What does success look like?
 -->
+Functional, CRAN-accepted R package with comprehensive documentation and community onboarding
 
 ## Measuring success
 
@@ -20,13 +19,8 @@ What does success look like?
 How will we know when success is achieved, what markers can we use
 along the way
 -->
-
-- Creation of the project in R and integration with GitHub
-- Functions for the tasks created
-- Testing the functions and sharing results
-- Submission to CRAN
-
-## Future work
+Following automated testing, stakeholder feedback, and R Core Team updates, the code are deployed to GitHub and CRAN.
+## References
 
 
 <!--

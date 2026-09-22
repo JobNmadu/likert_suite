@@ -5,9 +5,26 @@ will take and an estimated timeline. What are likely failure modes and
 how will you recover from them?
 
 This is where the proposal should be outlined.
--->
 
-Provide algorithms for the following concepts: binary construction, likert construction, likert conversion, vector description, and weight construction
+Provide algorithms for the following concepts: 
+- binary construction - convert Likert scores to binary variable
+- Likert construction - Convert numeric data to Likert items/scores
+- Likert conversion - Convert Likert text items to scores
+- Vector description - description/distribution of Likert-type data
+- Weight construction - Convert Likert-type data to indices
+-->
+Provide robust algorithms and optimized workflows for the following concepts:
+
+- Binary Coercion: Convert multi-point Likert scores to binary variables 
+
+- Ordinal Factor Mapping: Convert numeric or text data into clean, ordered factors or Likert scores
+
+- Text-to-Score Mapping: Parse and map Likert text responses into numeric score sequences
+
+- Vector Distribution/Description: Generate summary statistics, distributional and structural profiles of Likert-type vectors
+
+- Index Weight Construction: Scale and compile multi-item Likert-type data to composite indicators or indices
+
 
 ## Overview
 <!--
@@ -17,9 +34,10 @@ follow from solving the problem. This should be your most compelling
 section.
 
 Include concrete actions you will take and estimated timeline.
--->
 
 The proposal is to create R package for Likert-type data workflows.
+-->
+The proposal is to create an R package optimized for Likert-type data transformations.
 
 ## Detail
 <!--
@@ -34,25 +52,39 @@ Depending on project type the detail section should include:
 <!--
 What is the smallest thing you can build that delivers value to your users?
 -->
-The package, focusing on Likert-type data structures for construction and conversion is hosted on GitHub.
+The package, focusing on Likert-type data structures for construction and conversion, is hosted on GitHub.
 
 ### Architecture
 
 <!--
 What does the high-level architecture look like?
--->
+
 The package will be built in R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms.
+-->
+To minimize external dependencies, Base R functions will be used. The core algorithm revolves around _vector coercion_, type casting, and matrix mapping but where feasible `tidyverse` higher-level functions will be called. 
 
 ### Assumptions
 
 <!--
 What assumptions are you making that, if proven false, would invalidate the project?
--->
+
 There is high expectation that the project would be delivered with no particular risk associated with all timelines, except if emergencies or natural disasters, like COVID-19 happens.
+-->
+While the project's is technically sound, proposing a 15-week timeline introduces some risks identified below with their mitigation:
+
+- Unanticipated disruptions of the daily time budget but can be mitigated by using weekends
+
+- CRAN's checks or human reviewers rejects the initial submission but `devtools::check()` across multiple OS during coding phase can limit this
+
+- Disrupting internal conversion logic by breaking codes can be mitigated by minimal external dependencies and unit tests
+
+- Power outages or unstable internet can be mitigated with version control and testing offline pending power or internet restoration
+
+- Natural disasters (floods/earthquakes/hurricanes) and global crises (war/pandemics) can be mitigated by conducting the workshops virtually 
 
 ### External dependencies
 
 <!--
 What external dependencies does the project have (e.g. libraries, services, other projects, etc.)?
 -->
-The proposed package will rely of `tidyverse` established routines and workflows.
+The proposed package will rely on Base R and `tidyverse` established routines and workflows.
