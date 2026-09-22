@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Job Nmadu">
-<meta name="dcterms.date" content="2026-09-15">
+<meta name="dcterms.date" content="2026-09-22">
 
 <title>Easily construct, covert or build Likert items from vectors or data frames</title>
 <style>
@@ -2221,7 +2221,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2026-09-15</p>
+      <p class="date">2026-09-22</p>
     </div>
   </div>
   
@@ -2240,7 +2240,7 @@ vertical-align: -.125em;
 This section provides a condensed view of the entire proposal, one page long.
 It should be a comprehensive high-level overview that captures the essence of the proposal, including its goals, methods, expected outcomes, deliverables, and budget.
 -->
-<p>This proposal outlines a project to develop open-source R package to convert and construct Likert items from vectors or data frames, particularly from non-standard data structures. The proposal aims to bridge the gap where fragmented, manual workarounds that disrupt reproducible data workflows and introduce risks of manipulation errors are utilized for analyzing Likert-type data. The project will be executed over a nine-month timeline with a total proposed budget of USD 8,500. The timeline is divided into an initial two-month inception phase to design the architecture, a four-month coding and testing phase to release the core engine, a two-month preliminary release phase for initial CRAN submission and documentation setup, and a final month for project closure. The budget directly funds development labor at a rate of USD 50 per hour, documentation hosting, and a sensitization workshop for faculty and students at the Federal University of Technology, Minna. Upon completion, the package and its continuous updates will be maintained publicly in GitHub and CRAN repositories to optimize workflow efficiency for social and behavioral science researchers.</p>
+<p>This proposal outlines the development of open-source R package for converting or constructing Likert items from vectors or data frames, particularly from non-standard data structures. This proposal eliminates fragmented, manual workarounds for non-standard Likert-type data by introducing a reproducible workflow that mitigates data manipulation risks. The project is for a nine-month timeline and a budget of USD8,500. The timeline is divided into two-month inception phase to design the architecture, a four-month coding and testing phase to release the core engine, a two-month preliminary release phase for initial CRAN submission and documentation setup, and a final month for project closure. The budget directly funds labor at USD50 per hour, documentation hosting, and a sensitization workshop for faculty and students at the Federal University of Technology, Minna. Upon completion, the package and its continuous updates will be maintained publicly in GitHub and CRAN repositories.</p>
 </section>
 <section id="signatories" class="level1">
 <h1>Signatories</h1>
@@ -2270,7 +2270,7 @@ show their tack record.
 Who are the people who have actively helped with this proposal but
 won't necessarily be on the core project team later?
 -->
-<p>Dr. Halima Sallawu of Federal University of Technology, Minna, Nigeria is in my lab and has participated actively in several data collection activities by which the need for this project is borne.</p>
+<p>Dr. Halima Sallawu of Federal University of Technology, Minna, Nigeria and I have participated actively in several data collection which necessitated this project.</p>
 </section>
 <section id="consulted" class="level2">
 <h2 class="anchored" data-anchor-id="consulted">Consulted</h2>
@@ -2296,8 +2296,8 @@ It is important to cover:
  - [ ] Brief summary of existing work and previous attempts (e.g., relevant R packages)
  - [ ] If proposing changes to R itself: letter of support from R Core member
 -->
-<p>The CRAN packages for Likert-type data workflow, viz, <span class="citation" data-cites="mollazehi2025">Mollazehi (<a href="#ref-mollazehi2025" role="doc-biblioref">2025</a>)</span>; <span class="citation" data-cites="winzar2026">Winzar (<a href="#ref-winzar2026" role="doc-biblioref">2026</a>)</span> and <span class="citation" data-cites="bryer2025">Bryer and Speerschneider (<a href="#ref-bryer2025" role="doc-biblioref">2025</a>)</span>, have not contemplated a situation whereby transliterated to other formats may be required for more robust interpretation. They effectively facilitate standard Likert scale workflows, but operate under the assumption that data is conventional, clean ordinal format lacking the architectural framework required to handle format transliteration.</p>
-<p>Empirical workflow may encounter non-standard data requiring transformation for deep interpretation. For instance, researchers may need to convert Likert-type responses into ordinal scales and vice versa, or synthesize valid Likert-type scales from non-Likert data. Existing workflow cannot execute these transformations natively, therefore, work rely on disjointed, manual workarounds and ad-hoc scripting. This fragmentation disrupts workflows, introduces data entry risks and errors, resulting in man-hours loss. This project proposes an open-source R package for transliteration and dynamic format conversion to fill the gap and eliminate manual data workflows, preserve data integrity, and optimize workflow for handling non-standard Likert-type workflows.</p>
+<p>The CRAN packages for Likert-type data workflow, viz, <span class="citation" data-cites="mollazehi2025">Mollazehi (<a href="#ref-mollazehi2025" role="doc-biblioref">2025</a>)</span>; <span class="citation" data-cites="winzar2026">Winzar (<a href="#ref-winzar2026" role="doc-biblioref">2026</a>)</span> and <span class="citation" data-cites="bryer2025">Bryer and Speerschneider (<a href="#ref-bryer2025" role="doc-biblioref">2025</a>)</span>, did not encompass transliteration to other formats for more robust interpretation, but, facilitates standard Likert items workflows. They work on conventional, clean ordinal format lacking the architectural framework for transliteration.</p>
+<p>Empirical workflow may encounter non-standard data requiring transformation, like converting Likert-type items into ordinal scales and vice versa, or synthesizing valid Likert-type scales from non-Likert data. The existing workflow cannot execute these transformations natively, therefore, efforts has to rely on disjointed, manual workarounds and ad-hoc scripting. This fragmentation disrupts analysis, introduces data entry risks and errors, resulting in man-hours’ loss. This project proposes an open-source R package for transliteration and dynamic format conversion to fill the gap while preserving data integrity, and handling non-standard Likert-type natively.</p>
 </section>
 <section id="the-proposal" class="level1">
 <h1>The proposal</h1>
@@ -2308,14 +2308,7 @@ how will you recover from them?
 
 This is where the proposal should be outlined.
 -->
-<p>This project aims to provide algorithms around the following concepts:</p>
-<ul>
-<li>binary construction</li>
-<li>likert construction</li>
-<li>likert conversion</li>
-<li>vector description</li>
-<li>weight construction</li>
-</ul>
+<p>Provide algorithms for the following concepts: binary construction, likert construction, likert conversion, vector description, and weight construction</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <!--
@@ -2326,7 +2319,7 @@ section.
 
 Include concrete actions you will take and estimated timeline.
 -->
-<p>The proposal is to create and submit an R package dealing with likert-type data conversions to different formats.</p>
+<p>The proposal is to create R package for Likert-type data workflows.</p>
 </section>
 <section id="detail" class="level2">
 <h2 class="anchored" data-anchor-id="detail">Detail</h2>
@@ -2341,14 +2334,14 @@ Depending on project type the detail section should include:
 <!--
 What is the smallest thing you can build that delivers value to your users?
 -->
-<p>The minimum goals is to have a lightweight R package hosted on GitHub that successfully for transliteration between raw character vectors and structured ordinal Likert scales, focusing on likert construction and likert conversion modules.</p>
+<p>The package, focusing on Likert-type data structures for construction and conversion is hosted on GitHub.</p>
 </section>
 <section id="architecture" class="level3">
 <h3 class="anchored" data-anchor-id="architecture">Architecture</h3>
 <!--
 What does the high-level architecture look like?
 -->
-<p>The package will be built within the R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms around the main concepts and function of this project.</p>
+<p>The package will be built in R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms.</p>
 </section>
 <section id="assumptions" class="level3">
 <h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
@@ -2362,7 +2355,7 @@ What assumptions are you making that, if proven false, would invalidate the proj
 <!--
 What external dependencies does the project have (e.g. libraries, services, other projects, etc.)?
 -->
-<p>The proposed package would have minimum dependencies but would rely of <code>tidyverse</code> established routines and workflows.</p>
+<p>The proposed package will rely of <code>tidyverse</code> established routines and workflows.</p>
 </section>
 </section>
 </section>
@@ -2380,6 +2373,7 @@ important because projects need to get up and running quickly.
  - [ ] License decisions
  - [ ] Reporting framework
 -->
+<p>The start-up of the open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with local machine workflows. The overall system architecture design and defining the initial abstract classes that will govern the package’s functionality would be the priority.</p>
 </section>
 <section id="technical-delivery" class="level2">
 <h2 class="anchored" data-anchor-id="technical-delivery">Technical delivery</h2>
@@ -2390,7 +2384,7 @@ provide at least a high-level description of the implementation.
 Including target dates is really important as you need to be committed
 and the ISC need to have a means of tracking delivery
 -->
-<p>Functions and codes in GitHub and CRAN repositories as well as continuous development and integration on feedback, stakeholder concerns and updates occasioned by change of roles by R Core teams.</p>
+<p>Functions and codes in GitHub and CRAN repositories as well as continuous development and integration on feedback, stakeholder concerns and updates occasioned by change of rules by R Core teams.</p>
 </section>
 <section id="other-aspects" class="level2">
 <h2 class="anchored" data-anchor-id="other-aspects">Other aspects</h2>
@@ -2408,7 +2402,6 @@ to be shared quarterly on the R Consortium blog.
  - [ ] ISC meetings
 -->
 <p>Announcement posts and delivery blogs shall be used for continuous feedback while social media posts will be used for stakeholder engagement.</p>
-<p>UseR! conferences and ISC calls are also channels for publicity.</p>
 </section>
 <section id="budget-funding-plan" class="level2">
 <h2 class="anchored" data-anchor-id="budget-funding-plan">Budget &amp; funding plan</h2>
@@ -2491,6 +2484,12 @@ What does success look like?
 How will we know when success is achieved, what markers can we use
 along the way
 -->
+<ul>
+<li>Creation of the project in R and integration with GitHub</li>
+<li>Functions for the tasks created</li>
+<li>Testing the functions and sharing results</li>
+<li>Submission to CRAN</li>
+</ul>
 </section>
 <section id="future-work" class="level2">
 <h2 class="anchored" data-anchor-id="future-work">Future work</h2>
