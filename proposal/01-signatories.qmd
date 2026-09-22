@@ -26,7 +26,7 @@ Who are the people who have actively helped with this proposal but
 won't necessarily be on the core project team later?
 -->
 
-Dr. Halima Sallawu of Federal University of Technology, Minna, Nigeria is in my lab and has participated actively in several data collection activities by which the need for this project is borne.
+Dr. Halima Sallawu of Federal University of Technology, Minna, Nigeria and I have participated actively in several data collection which necessitated this project.
 
 ## Consulted
 <!--

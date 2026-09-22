@@ -12,6 +12,8 @@ important because projects need to get up and running quickly.
  - [ ] Reporting framework
 -->
 
+The start-up of the open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with local machine workflows. The overall system architecture design and defining the initial abstract classes that will govern the package's functionality would be the priority.
+
 
 ## Technical delivery
 <!--
@@ -22,7 +24,7 @@ Including target dates is really important as you need to be committed
 and the ISC need to have a means of tracking delivery
 -->
 
-Functions and codes in GitHub and CRAN repositories as well as continuous development and integration on feedback, stakeholder concerns and updates occasioned by change of roles by R Core teams.
+Functions and codes in GitHub and CRAN repositories as well as continuous development and integration on feedback, stakeholder concerns and updates occasioned by change of rules by R Core teams.
 
 ## Other aspects
 
@@ -41,8 +43,6 @@ to be shared quarterly on the R Consortium blog.
 -->
 
 Announcement posts and delivery blogs shall be used for continuous feedback while social media posts will be used for stakeholder engagement.
-
-UseR! conferences and ISC calls are also channels for publicity.
 
 ## Budget & funding plan
 

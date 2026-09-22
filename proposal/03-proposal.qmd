@@ -7,13 +7,7 @@ how will you recover from them?
 This is where the proposal should be outlined.
 -->
 
-This project aims to provide algorithms around the following concepts:
-
-- binary construction
-- likert construction
-- likert conversion
-- vector description
-- weight construction
+Provide algorithms for the following concepts: binary construction, likert construction, likert conversion, vector description, and weight construction
 
 ## Overview
 <!--
@@ -25,7 +19,7 @@ section.
 Include concrete actions you will take and estimated timeline.
 -->
 
-The proposal is to create and submit an R package dealing with likert-type data conversions to different formats.
+The proposal is to create R package for Likert-type data workflows.
 
 ## Detail
 <!--
@@ -40,14 +34,14 @@ Depending on project type the detail section should include:
 <!--
 What is the smallest thing you can build that delivers value to your users?
 -->
-The minimum goals is to have a lightweight R package hosted on GitHub that successfully for transliteration between raw character vectors and structured ordinal Likert scales, focusing on likert construction and likert conversion modules.
+The package, focusing on Likert-type data structures for construction and conversion is hosted on GitHub.
 
 ### Architecture
 
 <!--
 What does the high-level architecture look like?
 -->
-The package will be built within the R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms around the main concepts and function of this project.
+The package will be built in R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms.
 
 ### Assumptions
 
@@ -61,4 +55,4 @@ There is high expectation that the project would be delivered with no particular
 <!--
 What external dependencies does the project have (e.g. libraries, services, other projects, etc.)?
 -->
-The proposed package would have minimum dependencies but would rely of `tidyverse` established routines and workflows.
+The proposed package will rely of `tidyverse` established routines and workflows.
