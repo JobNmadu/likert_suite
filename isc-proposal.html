@@ -9,7 +9,7 @@
 <meta name="author" content="Job Nmadu">
 <meta name="dcterms.date" content="2026-09-22">
 
-<title>Easily construct, covert or build Likert items from vectors or data frames</title>
+<title>Easily construct, convert or build Likert items from vectors or data frames</title>
 <style>
 
 span.smallcaps{font-variant: small-caps;}
@@ -2197,7 +2197,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Easily construct, covert or build Likert items from vectors or data frames</h1>
+<h1 class="title">Easily construct, convert or build Likert items from vectors or data frames</h1>
 </div>
 
 
@@ -2239,8 +2239,10 @@ vertical-align: -.125em;
 <!--
 This section provides a condensed view of the entire proposal, one page long.
 It should be a comprehensive high-level overview that captures the essence of the proposal, including its goals, methods, expected outcomes, deliverables, and budget.
+
+This proposal outlines the development of an open-source R package for converting or constructing Likert items from vectors or data frames, particularly from non-standard data structures. The proposed package eliminates fragmented, manual workarounds for non-standard Likert-type data by introducing a reproducible workflow that mitigates data manipulation risks. The project is for a 10-month timeline and a budget of USD8,500. The timeline is divided into two-month inception phase to design the architecture, a four-month coding and testing phase to release the core engine, a two-month preliminary release phase for initial CRAN submission and documentation setup, and a final month for project closure. The budget directly funds labor at USD50 per hour, documentation hosting, and a sensitization workshop for faculty and students at the Federal University of Technology, Minna. Upon completion, the package and its continuous updates will be maintained publicly in GitHub and CRAN repositories.
 -->
-<p>This proposal outlines the development of open-source R package for converting or constructing Likert items from vectors or data frames, particularly from non-standard data structures. This proposal eliminates fragmented, manual workarounds for non-standard Likert-type data by introducing a reproducible workflow that mitigates data manipulation risks. The project is for a nine-month timeline and a budget of USD8,500. The timeline is divided into two-month inception phase to design the architecture, a four-month coding and testing phase to release the core engine, a two-month preliminary release phase for initial CRAN submission and documentation setup, and a final month for project closure. The budget directly funds labor at USD50 per hour, documentation hosting, and a sensitization workshop for faculty and students at the Federal University of Technology, Minna. Upon completion, the package and its continuous updates will be maintained publicly in GitHub and CRAN repositories.</p>
+<p>This proposal outlines the development of an open-source R package for converting or constructing Likert items from vectors or data frames, particularly from non-standard data structures. The proposed package eliminates fragmented, manual workarounds for non-standard data structures by introducing a reproducible workflow that mitigates data manipulation risks. Operating on a development model of 10 hours per week, the project features a 15-week timeline and a budget of USD 8,500. The timeline is divided into a three-week inception phase; a ten-week coding and testing phase, and initial CRAN submission with concurrent sensitization workshop; and a final two-week phase for incorporating community feedback and project closure. The budget funds 150 hours of core development labor at USD 50 per hour, documentation hosting, and a workshop for faculty and students at the Federal University of Technology, Minna, Nigeria. Upon completion, the package and its continuous updates will be maintained publicly in GitHub and CRAN repositories.</p>
 </section>
 <section id="signatories" class="level1">
 <h1>Signatories</h1>
@@ -2270,7 +2272,7 @@ show their tack record.
 Who are the people who have actively helped with this proposal but
 won't necessarily be on the core project team later?
 -->
-<p>Dr. Halima Sallawu of Federal University of Technology, Minna, Nigeria and I have participated actively in several data collection which necessitated this project.</p>
+<p>Dr. Halima Sallawu of Federal University of Technology, Minna, Nigeria and Professor Job Nmadu have participated actively in several data collection which necessitated this project.</p>
 </section>
 <section id="consulted" class="level2">
 <h2 class="anchored" data-anchor-id="consulted">Consulted</h2>
@@ -2296,8 +2298,8 @@ It is important to cover:
  - [ ] Brief summary of existing work and previous attempts (e.g., relevant R packages)
  - [ ] If proposing changes to R itself: letter of support from R Core member
 -->
-<p>The CRAN packages for Likert-type data workflow, viz, <span class="citation" data-cites="mollazehi2025">Mollazehi (<a href="#ref-mollazehi2025" role="doc-biblioref">2025</a>)</span>; <span class="citation" data-cites="winzar2026">Winzar (<a href="#ref-winzar2026" role="doc-biblioref">2026</a>)</span> and <span class="citation" data-cites="bryer2025">Bryer and Speerschneider (<a href="#ref-bryer2025" role="doc-biblioref">2025</a>)</span>, did not encompass transliteration to other formats for more robust interpretation, but, facilitates standard Likert items workflows. They work on conventional, clean ordinal format lacking the architectural framework for transliteration.</p>
-<p>Empirical workflow may encounter non-standard data requiring transformation, like converting Likert-type items into ordinal scales and vice versa, or synthesizing valid Likert-type scales from non-Likert data. The existing workflow cannot execute these transformations natively, therefore, efforts has to rely on disjointed, manual workarounds and ad-hoc scripting. This fragmentation disrupts analysis, introduces data entry risks and errors, resulting in man-hours’ loss. This project proposes an open-source R package for transliteration and dynamic format conversion to fill the gap while preserving data integrity, and handling non-standard Likert-type natively.</p>
+<p>The CRAN packages for Likert-type data workflow, viz, <span class="citation" data-cites="mollazehi2025">Mollazehi (<a href="#ref-mollazehi2025" role="doc-biblioref">2025</a>)</span>; <span class="citation" data-cites="winzar2026">Winzar (<a href="#ref-winzar2026" role="doc-biblioref">2026</a>)</span> and <span class="citation" data-cites="bryer2025">Bryer and Speerschneider (<a href="#ref-bryer2025" role="doc-biblioref">2025</a>)</span>, did not encompass seamless <em>type coercion</em> to alternative structures for robust downstream processing, but, facilitates standard Likert items workflows. They work with conventional, clean ordinal data formats and lack the native architectural framework required for structural transformations.</p>
+<p>Empirical workflow frequently encounter non-standard data which require programmatic modification; such as mapping items/scales into ordinal factors, turning multi-point data into binary indicators, or synthesizing Likert scales from continuous data. The existing workflow cannot execute these natively, forcing researchers to rely on fragmented, manual workarounds and ad-hoc scripting. This fragmentation disrupts analysis, introduces data entry risks, and leads to loss of man-hours. This project proposes an open-source R package for automated type coercion and dynamic vector mapping to systematically bridge this gap while preserving data integrity, and handling non-standard data natively.</p>
 </section>
 <section id="the-proposal" class="level1">
 <h1>The proposal</h1>
@@ -2307,8 +2309,22 @@ will take and an estimated timeline. What are likely failure modes and
 how will you recover from them?
 
 This is where the proposal should be outlined.
+
+Provide algorithms for the following concepts: 
+- binary construction - convert Likert scores to binary variable
+- Likert construction - Convert numeric data to Likert items/scores
+- Likert conversion - Convert Likert text items to scores
+- Vector description - description/distribution of Likert-type data
+- Weight construction - Convert Likert-type data to indices
 -->
-<p>Provide algorithms for the following concepts: binary construction, likert construction, likert conversion, vector description, and weight construction</p>
+<p>Provide robust algorithms and optimized workflows for the following concepts:</p>
+<ul>
+<li><p>Binary Coercion: Convert multi-point Likert scores to binary variables</p></li>
+<li><p>Ordinal Factor Mapping: Convert numeric or text data into clean, ordered factors or Likert scores</p></li>
+<li><p>Text-to-Score Mapping: Parse and map Likert text responses into numeric score sequences</p></li>
+<li><p>Vector Distribution/Description: Generate summary statistics, distributional and structural profiles of Likert-type vectors</p></li>
+<li><p>Index Weight Construction: Scale and compile multi-item Likert-type data to composite indicators or indices</p></li>
+</ul>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <!--
@@ -2318,8 +2334,10 @@ follow from solving the problem. This should be your most compelling
 section.
 
 Include concrete actions you will take and estimated timeline.
+
+The proposal is to create R package for Likert-type data workflows.
 -->
-<p>The proposal is to create R package for Likert-type data workflows.</p>
+<p>The proposal is to create an R package optimized for Likert-type data transformations.</p>
 </section>
 <section id="detail" class="level2">
 <h2 class="anchored" data-anchor-id="detail">Detail</h2>
@@ -2334,28 +2352,39 @@ Depending on project type the detail section should include:
 <!--
 What is the smallest thing you can build that delivers value to your users?
 -->
-<p>The package, focusing on Likert-type data structures for construction and conversion is hosted on GitHub.</p>
+<p>The package, focusing on Likert-type data structures for construction and conversion, is hosted on GitHub.</p>
 </section>
 <section id="architecture" class="level3">
 <h3 class="anchored" data-anchor-id="architecture">Architecture</h3>
 <!--
 What does the high-level architecture look like?
+
+The package will be built in R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms.
 -->
-<p>The package will be built in R statistical computing ecosystem with minimal external dependencies. The internal logic will revolve around transliteration and dynamic conversion algorithms.</p>
+<p>To minimize external dependencies, Base R functions will be used. The core algorithm revolves around <em>vector coercion</em>, type casting, and matrix mapping but where feasible <code>tidyverse</code> higher-level functions will be called.</p>
 </section>
 <section id="assumptions" class="level3">
 <h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
 <!--
 What assumptions are you making that, if proven false, would invalidate the project?
+
+There is high expectation that the project would be delivered with no particular risk associated with all timelines, except if emergencies or natural disasters, like COVID-19 happens.
 -->
-<p>There is high expectation that the project would be delivered with no particular risk associated with all timelines, except if emergencies or natural disasters, like COVID-19 happens.</p>
+<p>While the project’s is technically sound, proposing a 15-week timeline introduces some risks identified below with their mitigation:</p>
+<ul>
+<li><p>Unanticipated disruptions of the daily time budget but can be mitigated by using weekends</p></li>
+<li><p>CRAN’s checks or human reviewers rejects the initial submission but <code>devtools::check()</code> across multiple OS during coding phase can limit this</p></li>
+<li><p>Disrupting internal conversion logic by breaking codes can be mitigated by minimal external dependencies and unit tests</p></li>
+<li><p>Power outages or unstable internet can be mitigated with version control and testing offline pending power or internet restoration</p></li>
+<li><p>Natural disasters (floods/earthquakes/hurricanes) and global crises (war/pandemics) can be mitigated by conducting the workshops virtually</p></li>
+</ul>
 </section>
 <section id="external-dependencies" class="level3">
 <h3 class="anchored" data-anchor-id="external-dependencies">External dependencies</h3>
 <!--
 What external dependencies does the project have (e.g. libraries, services, other projects, etc.)?
 -->
-<p>The proposed package will rely of <code>tidyverse</code> established routines and workflows.</p>
+<p>The proposed package will rely on Base R and <code>tidyverse</code> established routines and workflows.</p>
 </section>
 </section>
 </section>
@@ -2373,7 +2402,7 @@ important because projects need to get up and running quickly.
  - [ ] License decisions
  - [ ] Reporting framework
 -->
-<p>The start-up of the open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with local machine workflows. The overall system architecture design and defining the initial abstract classes that will govern the package’s functionality would be the priority.</p>
+<p>The open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with the local machine workflows. The system’s architectural design and defining of the initial abstract classes will be the first priority.</p>
 </section>
 <section id="technical-delivery" class="level2">
 <h2 class="anchored" data-anchor-id="technical-delivery">Technical delivery</h2>
@@ -2384,7 +2413,7 @@ provide at least a high-level description of the implementation.
 Including target dates is really important as you need to be committed
 and the ISC need to have a means of tracking delivery
 -->
-<p>Functions and codes in GitHub and CRAN repositories as well as continuous development and integration on feedback, stakeholder concerns and updates occasioned by change of rules by R Core teams.</p>
+<p>Procedure for continuous integration, stakeholder feedback and updates by R Core teams are in place after package deployment to GitHub and CRAN repositories.</p>
 </section>
 <section id="other-aspects" class="level2">
 <h2 class="anchored" data-anchor-id="other-aspects">Other aspects</h2>
@@ -2401,7 +2430,7 @@ to be shared quarterly on the R Consortium blog.
  - [ ] UseR!
  - [ ] ISC meetings
 -->
-<p>Announcement posts and delivery blogs shall be used for continuous feedback while social media posts will be used for stakeholder engagement.</p>
+<p>Announcement posts and delivery blogs for continuous feedback while social media posts will be used for stakeholder engagement.</p>
 </section>
 <section id="budget-funding-plan" class="level2">
 <h2 class="anchored" data-anchor-id="budget-funding-plan">Budget &amp; funding plan</h2>
@@ -2422,48 +2451,69 @@ or personal hardware. Cloud services may be covered if they are specific
 to the project and the project period. The ISC reserves the right to vet
 how funds are used for each project separately. If in doubt, please reach
 out to us.
+
+In line with the above timelines, the budget propsed for this project is USD8500 appropriated as follows:
+
+Inception and take-off (USD1500): Funds 30 hours of core development work at a rate of USD50/hour covering GitHub setup and integration with local machine codes.
+
+Coding and testing (USD5000): Funds 100 hours of setting up functions and algorithms, and documentation (website and GitHub repositories). Initial submission to CRAN.
+
+Sensitization workshop(USD1000): Sensitization workshop and stakeholder engagement for faculty and students at Federal University of Technology, Minna. Publicity over social media handles.
+
+Final release  and closure (USD1000): Funds 20 hours for incorporating views from stakeholders into the package, responding to CRAN reviews and comments, cleaning up the package and final release to CRAN.
+
+Preliminary release and initial CRAN submission  | 2     | Comprehensive package documentation, website hosting, initial CRAN submission, and host a community webinar  | 1000
+
 -->
 <table class="caption-top table">
 <colgroup>
 <col style="width: 18%">
 <col style="width: 18%">
-<col style="width: 62%">
+<col style="width: 49%">
+<col style="width: 13%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Milestone</th>
-<th>Period (months)</th>
+<th>Duration (weeks)[1]</th>
 <th>Deliverable/Tangible Products</th>
+<th>Budget (USD)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Inception and take-off</td>
-<td>2</td>
-<td>Complete architecture design and initial abstract class definitions in the GitHub repository.</td>
+<td>3</td>
+<td>Establish GitHub repository and local machine integration. Complete core system architecture design and initial abstract class definitions</td>
+<td>1500</td>
 </tr>
 <tr class="even">
 <td>Coding and testing</td>
-<td>4</td>
-<td>Release the optimized core chunking engine; pass integration tests with local memory backends. Conduct a sensitization workshop for faculty and students.</td>
+<td>10</td>
+<td>Set up functions and transformation algorithms. Build the documentation website and GitHub pages. Pass integration tests with local memory backends and prepare the initial CRAN submission package</td>
+<td>5000</td>
 </tr>
 <tr class="odd">
-<td>Preliminary release and initial CRAN submission</td>
-<td>2</td>
-<td>Comprehensive pkgdown documentation, website hosting, initial CRAN submission, and host a community webinar.</td>
+<td>Sensitization Workshop</td>
+<td>concurrently with <em>Testing and Coding</em></td>
+<td>Conduct a sensitization workshop and stakeholder engagement for faculty and students at the Federal University of Technology, Minna. Drive publicity over social media handles</td>
+<td>1000</td>
 </tr>
 <tr class="even">
 <td>Final release and closure</td>
-<td>1</td>
-<td>Final CRAN submission and project closure</td>
+<td>2</td>
+<td>Incorporate stakeholder engagement feedback, resolve CRAN review comments, clean up repository branches, and achieve official final release on CRAN</td>
+<td>1000</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>15</td>
+<td></td>
+<td>8500</td>
 </tr>
 </tbody>
 </table>
-<p>In line with the above timelines, the budget propsed for this project is USD8500 appropriated as follows:</p>
-<p>Inception and take-off (USD1500): Funds 30 hours of core development work at a rate of USD50/hour covering GitHub setup and integration with local machine codes.</p>
-<p>Coding and testing (USD5000): Funds 100 hours of setting up functions and algorithms, and documentation (website and GitHub repositories). Initial submission to CRAN.</p>
-<p>Sensitization workshop(USD1000): Sensitization workshop and stakeholder engagement for faculty and students at Federal University of Technology, Minna. Publicity over social media handles.</p>
-<p>Final release and closure (USD1000): Funds 20 hours for incorporating views from stakeholders into the the package, responding to CRAN reviews and comments, cleaning up the package and final release to CRAN.</p>
+<p>[1] 10 hours are devoted per week</p>
 </section>
 </section>
 <section id="success" class="level1">
@@ -2477,6 +2527,7 @@ thorough understanding going in of what the risks are to delivery
 <!--
 What does success look like?
 -->
+<p>Functional, CRAN-accepted R package with comprehensive documentation and community onboarding</p>
 </section>
 <section id="measuring-success" class="level2">
 <h2 class="anchored" data-anchor-id="measuring-success">Measuring success</h2>
@@ -2484,15 +2535,7 @@ What does success look like?
 How will we know when success is achieved, what markers can we use
 along the way
 -->
-<ul>
-<li>Creation of the project in R and integration with GitHub</li>
-<li>Functions for the tasks created</li>
-<li>Testing the functions and sharing results</li>
-<li>Submission to CRAN</li>
-</ul>
-</section>
-<section id="future-work" class="level2">
-<h2 class="anchored" data-anchor-id="future-work">Future work</h2>
+<p>Following automated testing, stakeholder feedback, and R Core Team updates, the code are deployed to GitHub and CRAN. ## References</p>
 <!--
 How could this be extended / developed in the future by yourself
 and/or the community in general?
