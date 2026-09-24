@@ -17,13 +17,13 @@ Provide robust algorithms and optimized workflows for the following concepts:
 
 - Binary Coercion: Convert multi-point Likert scores to binary variables 
 
-- Ordinal Factor Mapping: Convert numeric or text data into clean, ordered factors or Likert scores
+- Ordinal Factor Mapping: Convert numeric or text data into clean, ordered or Likert scores
 
 - Text-to-Score Mapping: Parse and map Likert text responses into numeric score sequences
 
-- Vector Distribution/Description: Generate summary statistics, distributional and structural profiles of Likert-type vectors
+- Vector distribution/description: Generate summary, distribution or structural profiles of Likert vectors
 
-- Index Weight Construction: Scale and compile multi-item Likert-type data to composite indicators or indices
+- Index Weight Construction: convert multi-item Likert data to composite indicators or indices
 
 
 ## Overview
@@ -72,15 +72,15 @@ There is high expectation that the project would be delivered with no particular
 -->
 While the project's is technically sound, proposing a 15-week timeline introduces some risks identified below with their mitigation:
 
-- Unanticipated disruptions of the daily time budget but can be mitigated by using weekends
+- Unanticipated disruptions of daily time budget can be mitigated by using weekends
 
-- CRAN's checks or human reviewers rejects the initial submission but `devtools::check()` across multiple OS during coding phase can limit this
+- `devtools::check()` across multiple OS can limit rejection or delays from CRAN checks or reviewers
 
-- Disrupting internal conversion logic by breaking codes can be mitigated by minimal external dependencies and unit tests
+- Minimal external dependencies and unit tests can mitigate breaking codes from internal conversion logic
 
-- Power outages or unstable internet can be mitigated with version control and testing offline pending power or internet restoration
+- Version control and testing offline can mitigated power outages or unstable internet
 
-- Natural disasters (floods/earthquakes/hurricanes) and global crises (war/pandemics) can be mitigated by conducting the workshops virtually 
+- conducting workshops virtually can mitigate natural disasters (floods/earthquakes/hurricanes) and global crises (war/pandemics)  
 
 ### External dependencies
 

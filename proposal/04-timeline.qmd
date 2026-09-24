@@ -12,7 +12,7 @@ important because projects need to get up and running quickly.
  - [ ] Reporting framework
 -->
 
-The open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with the local machine workflows. The system's architectural design and defining of the initial abstract classes will be the first priority.
+The open-source R package, under GPL licence, is aimed at establishing the GitHub repository and integrating it with the local machine workflows. The first priority is designing the system's architecture and initial abstract classes.
 
 
 ## Technical delivery
@@ -80,9 +80,9 @@ Preliminary release and initial CRAN submission  | 2     | Comprehensive package
 
 Milestone     | Duration (weeks)[1] | Deliverable/Tangible Products | Budget (USD)
 ------------- | -------------  | ---------------------------------- | --------- 
-Inception and take-off  | 3     | Establish GitHub repository and local machine integration. Complete core system architecture design and initial abstract class definitions | 1500
-Coding and testing  | 10    | Set up functions and transformation algorithms. Build the documentation website and GitHub pages. Pass integration tests with local memory backends and prepare the initial CRAN submission package | 5000
+Inception and take-off  | 3     | Establish GitHub repository and local machine integration. Definiing the system architecture and initial abstract classes  | 1500
+Coding and testing  | 10    | Set up the functions and algorithms, build the website and GitHub pages. Pass integration tests with local backends and CRAN submission | 5000
 Sensitization Workshop  | concurrently with _Testing and Coding_    | Conduct a sensitization workshop and stakeholder engagement for faculty and students at the Federal University of Technology, Minna. Drive publicity over social media handles | 1000
-Final release  and closure | 2 | Incorporate stakeholder engagement feedback, resolve CRAN review comments, clean up repository branches, and achieve official final release on CRAN | 1000
+Final release  and closure | 2 | Incorporate stakeholder feedback, resolve CRAN review comments, clean up repository branches, and achieve release on CRAN | 1000
 Total | 15 |  | 8500
 [1] 10 hours are devoted per week
